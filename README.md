@@ -1,4 +1,4 @@
-# RPGsavedrcrypt
+# RPGsavedecrypt
 
 A simple tool to decrypt RPG Maker MV save files
 
