@@ -19,7 +19,9 @@ def decode_rpgsave(save):
 
 def encode_rpgsave(save):
     lz = lzstring.LZString()
-    encoded = lz.compressToBase64(save)
+    parsed = json.loads(save)
+    minified = json.dumps(parsed, separators=(',', ':'))
+    encoded = lz.compressToBase64(minified)
     return encoded
 
 
